@@ -29,17 +29,7 @@ export default {
         dynapuff: ["DynaPuff", "cursive"],
         dancing: ["Dancing Script", "cursive"],
       },
-      animation: {
-        show: "show 0.5s",
-      },
-      keyframes: {
-        show: {
-          "0%": { opacity: "0%" },
-          "100%": { opacity: "100%" },
-        },
-      },
     },
   },
   plugins: [],
 }
-
