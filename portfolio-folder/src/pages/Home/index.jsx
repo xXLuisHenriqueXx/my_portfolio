@@ -5,7 +5,7 @@ import Gmail from '../../assets/gmail.svg';
 
 function Home(){
     return (
-        <div className="container mx-auto w-full h-screen px-4 bg-home bg-bottom bg-no-repeat 3xl:bg-contain">
+        <div className="home container mx-auto w-full h-screen px-4 bg-home bg-bottom bg-no-repeat 3xl:bg-contain">
             <div className="lg:flex lg:flex-row">
                 <div className="flex flex-col justify-center items-center pt-24 lg:items-start lg:absolute lg:top-32 lg:left-12 xl:left-24 3xl:top-40 3xl:left-40">
                     <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 3xl:text-6xl font-bold font-roboto text-baseText">Olá, eu me chamo</h2>

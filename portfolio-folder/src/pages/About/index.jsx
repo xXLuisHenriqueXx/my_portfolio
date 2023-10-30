@@ -1,6 +1,6 @@
 function About(){
     return (
-        <div className="container mx-auto w-full h-screen px-4 bg-about bg-top bg-no-repeat 3xl:bg-contain">
+        <div className="about container mx-auto w-full h-screen px-4 bg-about bg-top bg-no-repeat 3xl:bg-contain">
             <div className="w-full h-screen flex flex-col justify-center md:flex md:flex-col md:items-center lg:flex-row lg:justify-between lg:items-start">
                 <div className="flex flex-col p-3 bg-backgroundCard backdrop-blur-sm rounded-2xl shadow-2xl shadow-purple-900 md:w-[500px] lg:mt-32 lg:absolute lg:w-[700px]">
                     <p className="indent-4 text-xl lg:text-3xl font-semibold font-roboto text-baseText">
