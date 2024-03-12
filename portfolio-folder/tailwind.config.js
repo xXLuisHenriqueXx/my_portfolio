@@ -45,6 +45,7 @@ export default {
         roboto: ["Roboto", "sans-serif"],
         dynapuff: ["DynaPuff", "cursive"],
         dancing: ["Dancing Script", "cursive"],
+        jolly: ["Jolly Lodger", "cursive"],
       },
       animation: {
         float: "float 3s ease-in-out infinite",

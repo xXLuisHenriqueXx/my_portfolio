@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import NavBar from "./components/Navbar";
 
-const App = () => {
+export default function App() {
   return (
     <div className="bg-background">
         <NavBar />
@@ -17,5 +17,3 @@ const App = () => {
     </div>
   );
 }
-
-export default App;
