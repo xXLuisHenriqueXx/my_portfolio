@@ -7,7 +7,7 @@ export default function NavBar() {
     const [showMenu, setShowMenu] = useState(false);
     
     const textLinkHamburguer = "text-white text-5xl py-10 font-bebas hover:text-violetText transition-colors"
-    const textLink = "text-white text-2xl font-bebas hover:text-violetText transition-all duration-500 lg:text-3xl"
+    const textLink = "text-white text-2xl font-bebas hover:text-violetText transition-all duration-500 lg:text-2xl"
     const icon = "text-white text-4xl"
     
     const handleMenu = () => {
@@ -22,7 +22,14 @@ export default function NavBar() {
             '
         >
             <div>
-                <h1 className="text-violetText font-jolly font-semibold text-4xl md:pl-4 lg:pl-12 lg:text-5xl">Luis Henrique</h1>
+                <h1 className="
+                        text-violetText font-jolly text-4xl 
+                        md:pl-4 
+                        lg:pl-12 lg:text-5xl
+                    "
+                >
+                    Luis Henrique
+                </h1>
             </div>
             <div className="
                     md:w-[500px] md:flex md:justify-end md:items-center
