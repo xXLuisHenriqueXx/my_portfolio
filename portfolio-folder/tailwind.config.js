@@ -35,10 +35,10 @@ export default {
         backgroundCard: "#1A0D4650",
       },
       backgroundImage: {
-        hero: "url('./src/assets/bg_hero.svg')",
-        home: "url('./src/assets/sec_home.svg')",
-        about: "url('./src/assets/sec_about.svg')",
-        project: "url('./src/assets/sec_project.svg')"
+        hero: "url('/src/assets/bg_hero.svg')",
+        home: "url('/src/assets/sec_home.svg')",
+        about: "url('/src/assets/sec_about.svg')",
+        project: "url('/src/assets/sec_project.svg')"
       },
       fontFamily: {
         bebas: ["Bebas Neue", "sans-serif"],
