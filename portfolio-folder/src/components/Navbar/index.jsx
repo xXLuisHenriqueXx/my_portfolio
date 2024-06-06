@@ -19,6 +19,7 @@ export default function NavBar() {
             className='
                 fixed z-50 bg-transparent h-20 px-4 w-full
                 flex justify-between items-center
+                xl:px-12
             '
         >
             <div>

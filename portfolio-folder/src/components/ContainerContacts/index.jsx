@@ -8,9 +8,10 @@ export default function ContainerContacts() {
     
     return (
         <div className="
-                flex flex-col justify-center items-center mt-20 
+                flex flex-col justify-center items-center mb-4
                 md:w-[400px] 
                 lg:absolute lg:bottom-8 lg:left-12 
+                xl:left-20  xl:bottom-10
                 bg-backgroundCard backdrop-blur-sm rounded-2xl shadow-xl shadow-background
             "
         >

@@ -56,6 +56,10 @@ export default {
           "50%": { transform: "translateY(-2%)" },
         },
       },
+
+      boxShadow: {
+        purplelight: "0 0 15px 0 #7B53EE60",
+      },
     },
   },
   plugins: [],

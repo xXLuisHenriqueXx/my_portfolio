@@ -1,13 +1,15 @@
 import React from "react";
 
 export default function ContainerSkills() {
-    const skillIcon = "p-2 bg-backgroundCard rounded-lg w-[70px] md:w-[100px] grayscale transition duration-500 ease-in-out hover:grayscale-0 hover:scale-110";
+    const skillIcon = "p-2 bg-backgroundCard rounded-lg w-[4.375rem] md:w-[6.25rem] 3xl:w-[8.125rem] 3xl:p-4 grayscale transition duration-500 ease-in-out hover:grayscale-0 hover:scale-110";
     
     return (
         <div className="
-        mt-20 p-4 bg-backgroundCard backdrop-blur-sm rounded-2xl shadow-2xl shadow-purple-900 
-        md:w-[500px] 
-        lg:absolute lg:mt-64 lg:right-20 "
+        mt-20 p-4 bg-backgroundCard backdrop-blur-sm rounded-2xl shadow-purplelight 
+        md:w-[31.25rem]
+        lg:absolute lg:mt-96 lg:right-10
+        xl:right-20
+        3xl:w-[50rem] 3xl:h-[30rem] 3xl:p-10 3xl:mt-[26rem]"
         >
             <h2 className="pt-4 text-xl lg:text-3xl font-medium font-bebas text-baseText text-center">
                 Minhas competências em programação web:
