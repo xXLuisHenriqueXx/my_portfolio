@@ -12,7 +12,7 @@ export default function ContainerContacts() {
                 md:w-[400px] 
                 lg:absolute lg:bottom-8 lg:left-12 
                 xl:left-20  xl:bottom-10
-                bg-backgroundCard backdrop-blur-sm rounded-2xl shadow-xl shadow-background
+                bg-backgroundCard backdrop-blur-sm rounded-lg shadow-xl shadow-background
             "
         >
             <h2 className="pt-4 text-2xl font-semibold font-bebas text-baseText">

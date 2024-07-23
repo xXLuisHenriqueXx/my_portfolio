@@ -5,10 +5,8 @@ export default function ContainerSkills() {
     
     return (
         <div className="
-        mt-20 p-4 bg-backgroundCard backdrop-blur-sm rounded-2xl shadow-purplelight 
+        p-4 bg-backgroundCard backdrop-blur-sm rounded-2xl shadow-purplelight 
         md:w-[31.25rem]
-        lg:absolute lg:mt-96 lg:right-10
-        xl:right-20
         3xl:w-[50rem] 3xl:h-[30rem] 3xl:p-10 3xl:mt-[26rem]"
         >
             <h2 className="pt-4 text-xl lg:text-3xl font-medium font-bebas text-baseText text-center">

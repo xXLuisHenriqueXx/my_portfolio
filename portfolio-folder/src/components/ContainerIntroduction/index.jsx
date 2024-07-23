@@ -6,11 +6,11 @@ export default function ContainerIntroduction() {
 
     return (
         <div className="
-                flex flex-col p-3 bg-backgroundCard backdrop-blur-sm rounded-2xl shadow-purplelight 
+                flex flex-col p-3 bg-backgroundCard backdrop-blur-sm rounded-lg shadow-purplelight 
                 md:w-[31.25rem] md:h-60 md:justify-center
-                lg:mt-32 lg:left-10 lg:absolute lg:w-[36.5rem] lg:h-72
-                xl:left-20 xl:h-auto
-                3xl:w-[50rem] 3xl:h-[30rem] 3xl:p-10 3xl:mt-40"
+                lg:w-[36.5rem] lg:h-72
+                xl:h-auto
+                3xl:w-[50rem] 3xl:h-[30rem] 3xl:p-10"
         >
             <p className={textWhite}>
                 Me chamo <span className={textHighlited}>Luis Henrique Cardoso</span> e sou programador.

@@ -3,17 +3,17 @@ import Container from "../../components/Container";
 import ContainerIntroduction from "../../components/ContainerIntroduction";
 import ContainerSkills from "../../components/ContainerSkills";
 
-function About(){
+function About() {
     return (
         <Container id={"about"} bgImage={"bg-about"} bgPosition={"bg-top"}>
             <div className="
-                    w-full h-screen flex flex-col justify-center 
-                    md:flex md:flex-col md:items-center 
-                    lg:flex-row lg:justify-between lg:items-start
+                    w-full max-h-screen grid grid-cols-1 place-items-center 
+                    xl:grid-cols-2 xl
                 "
             >
                 <ContainerIntroduction />
                 <ContainerSkills />
+
             </div>
         </Container>
     )

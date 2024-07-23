@@ -21,7 +21,6 @@ export default function Home() {
                             text-7xl font-black font-bebas text-highlitedText
                             md:text-7xl 
                             lg:text-8xl 
-                            xl:text-9xl 
                             3xl:text-10xl
                         "
                     >
@@ -32,7 +31,7 @@ export default function Home() {
 
                 <div className="md:flex md:flex-col md:items-center lg:flex-row lg:w-full">
                     <div className="mt-4 flex justify-center lg:absolute lg:top-28 lg:right-12 xl:right-24 3xl:right-40">
-                        <img src={Perfil} alt="Minha foto" className="w-[360px] lg:w-[420px] xl:w-[540px] 3xl:w-[680px] animate-float" />
+                        <img src={Perfil} alt="Minha foto" className="w-[360px] lg:w-[420px] 2xl:w-[540px] 3xl:w-[680px] animate-float" />
                     </div>
                     <ContainerContacts />
                 </div>
