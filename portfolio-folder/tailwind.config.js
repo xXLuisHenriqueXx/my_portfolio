@@ -3,12 +3,11 @@ export default {
   content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
     screens: {
-      sm: "425px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1366px",
-      "2xl": "1440px",
-      "3xl": "1920px",
+      'sm': "425px",
+      'md': "768px",
+      'lg': "1024px",
+      'xl': "1366px",
+      '2xl': "1440px",
     },
     fontSize: {
       xs: [".75rem", "1rem"],
@@ -28,17 +27,12 @@ export default {
     extend: {
       colors: {
         background: "#18122B",
-        baseText: "#FFFFFF",
-        highlitedText: "#EC7272",
-        violetText: "#7B53EE",
+        backgroundCard: "#7856db1a",
+        backgroundIcon: "#170c3999",
+        lightColor: "#E0D9F5",
+        highlitedColor: "#EC7272",
+        violetColor: "#7B53EE",
         linkText: "#EA2D2E",
-        backgroundCard: "#1A0D4650",
-      },
-      backgroundImage: {
-        hero: "url('/src/assets/bg_hero.svg')",
-        home: "url('/src/assets/sec_home.svg')",
-        about: "url('/src/assets/sec_about.svg')",
-        project: "url('/src/assets/sec_project.svg')"
       },
       fontFamily: {
         bebas: ["Bebas Neue", "sans-serif"],
@@ -55,10 +49,6 @@ export default {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-2%)" },
         },
-      },
-
-      boxShadow: {
-        purplelight: "0 0 15px 0 #7B53EE60",
       },
     },
   },

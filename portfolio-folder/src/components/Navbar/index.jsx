@@ -6,9 +6,9 @@ import { FiMenu, FiX } from "react-icons/fi";
 export default function NavBar() {
     const [showMenu, setShowMenu] = useState(false);
     
-    const textLinkHamburguer = "text-white text-5xl py-10 font-bebas hover:text-violetText transition-colors"
-    const textLink = "text-white text-2xl font-bebas hover:text-violetText transition-all duration-500 lg:text-2xl"
-    const icon = "text-white text-4xl"
+    const textLinkHamburguer = "text-lightColor text-5xl py-10 font-bebas hover:text-violetColor transition-colors"
+    const textLink = "text-lightColor text-2xl font-bebas hover:text-violetColor transition-all duration-500 lg:text-2xl"
+    const icon = "text-lightColor text-4xl"
     
     const handleMenu = () => {
         setShowMenu(!showMenu);
@@ -20,11 +20,12 @@ export default function NavBar() {
                 fixed z-50 bg-transparent h-20 px-4 w-full
                 flex justify-between items-center
                 xl:px-12
+                2xl:px-24
             '
         >
             <div>
                 <h1 className="
-                        text-violetText font-jolly text-4xl 
+                        text-violetColor font-jolly text-4xl 
                         md:pl-4 
                         lg:pl-12 lg:text-5xl
                     "
@@ -43,8 +44,8 @@ export default function NavBar() {
                     "
                 >
                     <a href="#home" className={textLink}>Home</a>
-                    <a href="#about" className={textLink}>About Me</a>
-                    <a href="#projects" className={textLink}>Projects</a>
+                    <a href="#about" className={textLink}>Sobre mim</a>
+                    <a href="#projects" className={textLink}>Projetos</a>
                 </div>
 
                 <div className="
@@ -56,11 +57,10 @@ export default function NavBar() {
                                 <FiX className={icon} />
                         ) : (    
                                 <FiMenu className={icon} />
-                        )
-                        }
+                        )}
                     </button>
                 </div>
-                {showMenu ? (
+                {showMenu && (
                     <div className="
                             md:hidden
                             fixed top-16 left-0 w-full h-[400px]
@@ -68,13 +68,10 @@ export default function NavBar() {
                         "
                     >
                         <a href="#home" className={textLinkHamburguer} onClick={handleMenu}>Home</a>
-                        <a href="#about" className={textLinkHamburguer} onClick={handleMenu}>About Me</a>
-                        <a href="#projects" className={textLinkHamburguer} onClick={handleMenu}>Projects</a>
+                        <a href="#about" className={textLinkHamburguer} onClick={handleMenu}>Sobre mim</a>
+                        <a href="#projects" className={textLinkHamburguer} onClick={handleMenu}>Projetos</a>
                     </div>
-                ) : (
-                    <></> 
-                )
-                }
+                )}
             </div>
         </nav>
     );
