@@ -12,22 +12,22 @@ Este repositório contém o código-fonte do meu portfólio pessoal, que exibe i
 - **TailwindCSS**: Framework CSS utilitário para estilização rápida e responsiva.
 
 # Como Executar o Projeto
-Clone o repositório com os comandos abaixo:
-```
+1. Clone o repositório com os comandos abaixo:
+```bash
 git clone https://github.com/seu-usuario/nome-do-repositorio.git
 cd nome-do-repositorio
 ```
 
-Instale as dependências com o comando abaixo:
-```
+2. Instale as dependências com o comando abaixo:
+```bash
 npm install
 ```
 
-Execute o servidor de desenvolvimento com o comando abaixo:
-```
+3. Execute o servidor de desenvolvimento com o comando abaixo:
+```bash
 npm run dev
 ```
-- Acesse o portfólio em http://localhost:3000 no navegador.
+4. Acesse o portfólio em http://localhost:3000 no navegador.
 
 ## Contribuição
 - Embora este seja um portfólio pessoal, sugestões são sempre bem-vindas! Fique à vontade para abrir uma issue ou enviar um pull request.
