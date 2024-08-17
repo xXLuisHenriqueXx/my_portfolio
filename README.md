@@ -1,5 +1,5 @@
 # Meu Portfólio Pessoal
-- Este repositório contém o código-fonte do meu portfólio pessoal, que exibe informações sobre mim, meus projetos e meu trabalho. O portfólio foi desenvolvido utilizando React, Vite e TailwindCSS para proporcionar uma experiência rápida, responsiva e moderna.
+Este repositório contém o código-fonte do meu portfólio pessoal, que exibe informações sobre mim, meus projetos e meu trabalho. O portfólio foi desenvolvido utilizando React, Vite e TailwindCSS para proporcionar uma experiência rápida, responsiva e moderna.
 
 ## Funcionalidades
 - Home: Uma introdução com uma breve apresentação.
@@ -28,12 +28,6 @@ Execute o servidor de desenvolvimento com o comando abaixo:
 npm run dev
 ```
 - Acesse o portfólio em http://localhost:3000 no navegador.
-
-# Estrutura do Projeto
-- src/
- - components/: Componentes reutilizáveis utilizados no portfólio.
- - pages/: Contém as páginas Home, Sobre Mim, e Projetos.
- - assets/: Imagens, ícones, e outros recursos estáticos.
 
 ## Contribuição
 - Embora este seja um portfólio pessoal, sugestões são sempre bem-vindas! Fique à vontade para abrir uma issue ou enviar um pull request.
