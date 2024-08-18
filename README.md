@@ -29,6 +29,13 @@ npm run dev
 ```
 4. Acesse o portfólio em http://localhost:3000 no navegador.
 
+## Estrutura do Projeto
+- src/
+  - assets/: Imagens, ícones e outros recursos estáticos.
+  - components/: Componentes reutilizáveis da aplicação.
+  - contexts/: Contextos globais do React para gerenciar estados e dados que precisam ser acessados em múltiplos componentes.
+  - pages/: Telas do site.
+
 ---
 
 # Contribuição
