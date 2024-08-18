@@ -6,7 +6,7 @@ Este repositório contém o código-fonte do meu portfólio pessoal, que exibe i
 - **Sobre Mim**: Uma página detalhada com informações sobre minha trajetória, habilidades e experiências.
 - **Projetos**: Uma seção onde apresento alguns dos projetos que desenvolvi, com links para o código-fonte.
 
-## Tecnologias Utilizadas
+## Tecnologias Utilizadas <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="20"/>
 - **React**: Biblioteca JavaScript para criação de interfaces de usuário dinâmicas.
 - **Vite**: Ferramenta de build e desenvolvimento para projetos front-end.
 - **TailwindCSS**: Framework CSS utilitário para estilização rápida e responsiva.
