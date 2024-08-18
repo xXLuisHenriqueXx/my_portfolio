@@ -29,6 +29,8 @@ npm run dev
 ```
 4. Acesse o portfólio em http://localhost:3000 no navegador.
 
+---
+
 # Contribuição
 - Embora este seja um portfólio pessoal, sugestões são sempre bem-vindas! Fique à vontade para abrir uma issue ou enviar um pull request.
 
