@@ -30,7 +30,7 @@ export default function Home() {
                 </div>
 
                 <div className="md:flex md:flex-col md:items-center lg:flex-row lg:w-full">
-                    <div className="mt-4 flex justify-center lg:absolute lg:top-28 lg:right-12 xl:right-24 2xl:right-36">
+                    <div className="mt-4 flex justify-center lg:absolute lg:top-[10%] lg:right-12 xl:right-24 2xl:right-36">
                         <img src={Perfil} alt="Minha foto" className="w-[360px] lg:w-[420px] xl:w-[540px] 2xl:w-[680px] animate-float" />
                     </div>
                     <ContainerContacts />

@@ -7,6 +7,7 @@ export default function ContainerSkills() {
         <div className="
         w-full p-4 bg-backgroundCard rounded-lg
         md:w-[31.25rem]
+        xl:w-[36.5rem] xl:px-8
         2xl:w-[42rem] 2xl:h-[30rem] 2xl:p-10"
         >
             <h2 className="pt-4 text-xl md:text-2xl lg:text-3xl font-medium font-bebas text-lightColor text-center">

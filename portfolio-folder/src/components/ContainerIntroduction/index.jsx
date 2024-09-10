@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function ContainerIntroduction() {
-    const textWhite = "p-2 indent-4 font-light md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-semibold font-roboto text-lightColor"
+    const textWhite = "p-2 indent-4 font-light md:text-lg lg:text-xl xl:text-xl 2xl:text-3xl font-semibold font-roboto text-lightColor"
     const textHighlited = "font-dynapuff text-highlitedColor"
 
     return (
@@ -9,7 +9,7 @@ export default function ContainerIntroduction() {
                 w-full flex flex-col p-3 bg-backgroundCard rounded-lg
                 md:w-[31.25rem] md:h-68 md:justify-center
                 lg:w-[36.5rem] lg:h-72
-                xl:h-auto
+                xl:h-80
                 2xl:w-[45rem] 2xl:h-[28rem] 2xl:p-10"
         >
             <p className={textWhite}>

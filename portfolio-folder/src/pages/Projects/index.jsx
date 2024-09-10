@@ -11,6 +11,7 @@ const projects = [
     description: "Projeto de TCC, que consiste em um aplicativo Fullstack que ajuda na organização estudantil.",
     technologies: "React native | NodeJS | ExpressJS | MongoDB ",
     date: '01/2024',
+    link: "https://github.com/xXLuisHenriqueXx/tcc_Repository_frontend",
     image: NotFound,
     imageAlt: "Imagem do projeto PomodoroStudy"
   },
@@ -20,9 +21,20 @@ const projects = [
     description: "Projeto de site para estudo, que consiste em uma pizzaria fictícia.",
     technologies: "ReactJS | TailwindCSS",
     date: '05/2024',
+    link: "https://github.com/xXLuisHenriqueXx/Pizzaria_LandingPage",
     image: NotFound,
     imageAlt: "Imagem do projeto DevPizza"
   },
+  {
+    id: 3,
+    title: "EcoMap",
+    description: "Projeto de aplicativo para estudo, que consiste em uma ferramenta que busca locais próximos para descarte de lixo.",
+    technologies: "React native | NodeJS | ExpressJS | MongoDB",
+    date: '07/2024',
+    link: "https://github.com/xXLuisHenriqueXx/ecoMap_frontend",
+    image: NotFound,
+    imageAlt: "Imagem do projeto EcoMap"
+  }
 ]
 
 
@@ -49,7 +61,7 @@ export default function Projects() {
         <div className="
           w-full h-[75%] bg-backgroundCard rounded-lg flex justify-center items-center
           lg:mx-12
-          xl:w-[60%] 
+          xl:w-[60%] xl:h-[90%] 
         ">
           <div className="
             w-full h-full flex flex-col justify-center items-center py-7 px-4
@@ -60,15 +72,15 @@ export default function Projects() {
               MEUS PROJETOS
             </h1>
 
-              <div className="
+            <div className="
                 w-full h-[80%] flex justify-center items-center bg-backgroundIcon my-4 rounded-lg relative overflow-hidden
               ">
-                <div
-                  className="flex w-full h-full transition-transform duration-300"
-                  style={{
-                    transform: `translateX(-${currentIndex * 100}%)`,
-                  }}
-                >
+              <div
+                className="flex w-full h-full transition-transform duration-300"
+                style={{
+                  transform: `translateX(-${currentIndex * 100}%)`,
+                }}
+              >
                 {projects.map((project) => {
                   return (
                     <div key={project.id} className="
@@ -81,7 +93,7 @@ export default function Projects() {
                       ">
                         {project.title}
                       </h1>
-                      
+
                       <p className="
                         text-xs text-lightColor font-normal my-1 
                         2xl:text-base
@@ -95,11 +107,13 @@ export default function Projects() {
                         {project.technologies}
                       </p>
 
-                      <img src={project.image} alt={project.imageAlt} className="
-                        w-52 h-auto object-cover my-4
+                      <a href={project.link} target='_blank'>
+                        <img src={project.image} alt={project.imageAlt} className="
+                        w-52 h-auto object-cover my-4 cursor-pointer
                         md:w-64
                         2xl:w-80
                       "/>
+                      </a>
 
                       <p className="
                         text-sm text-lightColor font-light text-wrap text-center mx-2
@@ -127,17 +141,17 @@ export default function Projects() {
               >
                 <FaChevronRight color="#E0D9F5" size={22} />
               </button>
-              </div>
-              <p className="
+            </div>
+            <p className="
                 text-sm text-lightColor font-normal text-wrap text-center
                 2xl:text-base
               ">
-                Você pode visualizar meus projetos em andamento clicando nesse <a className="font-bold text-linkText" href="https://github.com/xXLuisHenriqueXx" target='_blank'>LINK</a>!
-              </p>
-            </div>
+              Você pode visualizar meus projetos em andamento clicando nesse <a className="font-bold text-linkText" href="https://github.com/xXLuisHenriqueXx" target='_blank'>LINK</a>!
+            </p>
           </div>
-
         </div>
+
+      </div>
     </Container>
   )
 }
