@@ -3,7 +3,7 @@ import React from "react";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import NavBar from "./components/Navbar";
+import NavBar from "./components/common/Navbar";
 
 export default function App() {
   return (

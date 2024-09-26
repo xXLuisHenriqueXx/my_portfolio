@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Container from '../../components/Container'
+import Container from '../../components/common/Container'
 import { FaChevronRight, FaChevronLeft } from 'react-icons/fa'
 
 import NotFound from '../../assets/project_notfound.svg'
@@ -59,7 +59,7 @@ export default function Projects() {
           w-full h-screen flex justify-center items-center
       ">
         <div className="
-          w-full h-[75%] bg-backgroundCard rounded-lg flex justify-center items-center
+          w-full h-[75%] bg-backgroundCard rounded-md flex justify-center items-center
           lg:mx-12
           xl:w-[60%] xl:h-[90%] 
         ">
@@ -73,7 +73,7 @@ export default function Projects() {
             </h1>
 
             <div className="
-                w-full h-[80%] flex justify-center items-center bg-backgroundIcon my-4 rounded-lg relative overflow-hidden
+                w-full h-[80%] flex justify-center items-center bg-backgroundIcon my-4 rounded-md relative overflow-hidden
               ">
               <div
                 className="flex w-full h-full transition-transform duration-300"
@@ -101,7 +101,7 @@ export default function Projects() {
                         Projeto criado em: <span className="font-bold">{project.date}</span>
                       </p>
                       <p className="
-                        text-xs font-semibold text-highlitedColor text-center py-1 px-2 bg-backgroundCard rounded-lg
+                        text-xs font-semibold text-highlitedColor text-center py-1 px-2 bg-backgroundCard rounded-md
                         2xl:text-base
                       ">
                         {project.technologies}
