@@ -25,10 +25,13 @@ export default {
       "10xl": ["8rem", "1"],
     },
     extend: {
+      backgroundImage: {
+        hero: "url('/src/assets/background.png')",
+      },
       colors: {
-        background: "#18122B",
-        backgroundCard: "#7856db1a",
-        backgroundIcon: "#170c3999",
+        background: "#17151E",
+        backgroundCard: "#948BAD33",
+        backgroundIcon: "#232030",
         lightColor: "#E0D9F5",
         highlitedColor: "#EC7272",
         violetColor: "#7B53EE",
