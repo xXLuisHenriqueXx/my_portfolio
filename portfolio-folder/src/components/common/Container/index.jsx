@@ -1,14 +1,17 @@
 import React from "react";
+import { tv } from "tailwind-variants";
+
+const card = tv({
+    slots: {
+        container: "container mx-auto w-full min-h-screen px-4"
+    }
+});
+
+const { container } = card();
 
 export default function Container({ children, id}) {
-    const Class = `container mx-auto w-full min-h-screen px-4`;
-    // bg-hero bg-cover bg-center bg-no-repeat
-    
     return (
-        <div
-            className={Class}
-            id={id}
-        >
+        <div className={container()} id={id}>
             { children }
         </div>
     );
