@@ -37,5 +37,5 @@ export default function ContainerContacts() {
                 </a>
             </div>
         </div>
-    );
+    )
 }

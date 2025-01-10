@@ -61,7 +61,7 @@ const projectsData = [
         image: NotFound,
         imageAlt: "Imagem do projeto EcoMap"
     }
-]
+];
 
 export default function Carousel() {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -69,14 +69,14 @@ export default function Carousel() {
     const handlePrevIndex = () => {
         setCurrentIndex((prevIndex) =>
             prevIndex === 0 ? projectsData.length - 1 : prevIndex - 1
-        );
-    };
+        )
+    }
 
     const handleNextIndex = () => {
         setCurrentIndex((prevIndex) =>
             prevIndex === projectsData.length - 1 ? 0 : prevIndex + 1
-        );
-    };
+        )
+    }
 
     return (
         <div className={container()}>

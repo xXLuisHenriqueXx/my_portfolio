@@ -25,5 +25,5 @@ export default function ContainerIntroduction() {
             </p>
             <p className={normalText()}>Estou sempre buscando estudar as novas tendências do mercado, afim de produzir o melhor produto possível.</p>
         </div>
-    );
+    )
 }

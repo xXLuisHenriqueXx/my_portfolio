@@ -1,7 +1,9 @@
 import React from 'react';
-import ContainerContacts from './ContainerContacts';
-import Perfil from '../../../assets/perfil.png';
 import { tv } from 'tailwind-variants';
+
+import ContainerContacts from './ContainerContacts';
+
+import Perfil from '../../../assets/perfil.png';
 
 const card = tv({
     slots: {

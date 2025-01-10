@@ -79,5 +79,5 @@ export default function ContainerSkills() {
                 </div>
             </div>
         </div>
-    );
+    )
 }

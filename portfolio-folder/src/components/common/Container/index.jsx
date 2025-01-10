@@ -14,5 +14,5 @@ export default function Container({ children, id}) {
         <div className={container()} id={id}>
             { children }
         </div>
-    );
+    )
 }

@@ -1,11 +1,12 @@
 import React from "react";
+
 import Container from "../../components/common/Container";
-import ContainerIntroduction from "../../components/About/ContainerIntroduction";
-import ContainerSkills from "../../components/About/ContainerSkills";
 import ContainerMain from "../../components/About/ContainerMain";
 import ContainerPosition from "../../components/About/ContainerPosition";
+import ContainerIntroduction from "../../components/About/ContainerIntroduction";
+import ContainerSkills from "../../components/About/ContainerSkills";
 
-function About() {
+export default function About() {
     return (
         <Container id={"about"}>
             <ContainerMain>
@@ -20,5 +21,3 @@ function About() {
         </Container>
     )
 }
-
-export default About;

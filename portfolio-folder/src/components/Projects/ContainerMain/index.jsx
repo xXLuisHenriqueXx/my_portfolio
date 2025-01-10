@@ -6,7 +6,7 @@ const card = tv({
         container: "w-full h-screen flex justify-center items-center",
         containerBox: "flex justify-center items-center w-full h-[75%] xl:w-[60%] xl:h-[90%] lg:mx-12 bg-backgroundCard rounded-md"
     }
-})
+});
 
 const { container, containerBox } = card();
 

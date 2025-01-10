@@ -12,7 +12,7 @@ const card = tv({
     normalText: "text-sm 2xl:text-base text-lightColor text-wrap text-center",
     linkText: "font-bold text-linkText",
   }
-})
+});
 
 const { containerContent, title, normalText, linkText } = card();
 
