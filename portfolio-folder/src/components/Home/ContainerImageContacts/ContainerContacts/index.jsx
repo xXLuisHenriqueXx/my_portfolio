@@ -16,6 +16,24 @@ const card = tv({
 
 const { container, title, containerIcons, icon } = card();
 
+const contactsData = [
+    {
+        icon: Github,
+        link: "https://github.com/xXLuisHenriqueXx",
+        alt: "Github logo"
+    },
+    {
+        icon: Linkedin,
+        link: "https://www.linkedin.com/in/luis-henrique-a2b833269/",
+        alt: "Linkedin logo"
+    },
+    {
+        icon: Gmail,
+        link: "mailto:mailto:luishenri567@gmail.com",
+        alt: "Gmail logo"
+    }
+]
+
 export default function ContainerContacts() {
     return (
         <div className={container()}>
@@ -24,17 +42,11 @@ export default function ContainerContacts() {
             </h2>
 
             <div className={containerIcons()}>
-                <a href="https://github.com/xXLuisHenriqueXx" target='_blank'>
-                    <img src={Github} alt="Github logo" className={icon()} />
-                </a>
-
-                <a href="https://www.linkedin.com/in/luis-henrique-a2b833269/" target='_blank'>
-                    <img src={Linkedin} alt="Linkedin logo" className={icon()} />
-                </a>
-
-                <a href="mailto:luishenri567@gmail.com" target='_blank'>
-                    <img src={Gmail} alt="Gmail logo" className={icon()} />
-                </a>
+                {contactsData.map((contact, index) => (
+                    <a key={index} href={contact.link} target="_blank" rel="noreferrer">
+                        <img className={icon()} src={contact.icon} alt={contact.alt} />
+                    </a>
+                ))}
             </div>
         </div>
     )
