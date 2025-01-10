@@ -7,10 +7,10 @@ import Gmail from '../../../../assets/gmail.svg';
 
 const card = tv({
     slots: {
-        container: 'flex flex-col justify-center items-center md:w-[25rem] mb-4 lg:absolute lg:bottom-8 lg:left-12  xl:left-20 xl:bottom-10 2xl:left-36 2xl:bottom-12 bg-backgroundCard rounded-md',
+        container: 'flex flex-col justify-center items-center md:w-[24rem] lg:absolute lg:bottom-8 lg:left-12  xl:left-20 xl:bottom-10 2xl:left-36 2xl:bottom-12 bg-backgroundCard rounded-md',
         containerIcons: 'flex flex-row w-full items-center justify-between py-4 px-8',
-        title: 'pt-4 text-lg font-black text-lightColor',
-        icon: 'w-[75px] p-2 bg-backgroundIcon rounded-full grayscale transition duration-500 ease-in-out hover:grayscale-0' 
+        title: 'pt-4 text-2xl font-bebas text-lightColor',
+        icon: 'w-[70px] p-2 bg-backgroundIcon rounded-full grayscale transition duration-500 ease-in-out hover:grayscale-0' 
     }
 });
 

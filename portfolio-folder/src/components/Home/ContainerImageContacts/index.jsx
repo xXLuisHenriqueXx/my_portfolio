@@ -6,7 +6,7 @@ import { tv } from 'tailwind-variants';
 const card = tv({
     slots: {
         container: 'md:flex md:flex-col md:items-center lg:flex-row lg:w-full',
-        imageContainer: 'flex justify-center mb-6 lg:absolute lg:top-[10%] lg:right-12 xl:right-24 2xl:right-36',
+        imageContainer: 'flex justify-center mb-8 lg:absolute lg:top-[10%] lg:right-12 xl:right-24 2xl:right-36',
         image: 'w-[360px] lg:w-[420px] xl:w-[540px] 2xl:w-[680px] animate-float'
     }
 });

@@ -3,15 +3,15 @@ import { tv } from 'tailwind-variants';
 
 const card = tv({
   slots: {
-    mainContainer: 'lg:flex lg:flex-row'
+    container: 'lg:flex lg:flex-row'
   }
 });
 
-const { mainContainer } = card();
+const { container } = card();
 
 export default function ContainerMain({ children }) {
   return (
-    <div className={mainContainer()}>
+    <div className={container()}>
         {children}
     </div>
   )

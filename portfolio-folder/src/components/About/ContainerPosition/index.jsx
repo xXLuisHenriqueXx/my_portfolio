@@ -22,7 +22,7 @@ const { mainContainer } = card();
 
 export default function ContainerPosition({ side, children }) {
     return (
-        <div className={mainContainer({ mainContainer: side})}>
+        <div className={mainContainer({ mainContainer: side })}>
             {children}
         </div>
     )
