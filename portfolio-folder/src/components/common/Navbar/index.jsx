@@ -1,74 +1,71 @@
 import React, { useState } from "react";
+import { tv } from "tailwind-variants";
 import { FiMenu, FiX } from "react-icons/fi";
 
+const card = tv({
+    slots: {
+        container: "fixed flex justify-between items-center w-full h-20 px-4 xl:px-12 2xl:px-24 z-50 bg-transparent",
+        containerContent: "md:flex md:justify-end md:items-center md:w-[500px]",
+        containerLinks: "hidden md:flex md:flex-row md:pr-4 lg:pr-12 md:space-x-12 lg:space-x-16",
+        containerMenu: "md:hidden fixed flex flex-col items-center top-16 left-0 w-full h-[400px] bg-background",
+        nameText: "text-4xl font-jolly text-violetColor md:pl-4 lg:pl-12 lg:text-5xl",
+        textLinkHamburguer: "text-5xl font-bebas text-lightColor hover:text-violetColor transition-colors py-10",
+        textLink: "text-2xl font-bebas text-lightColor hover:text-violetColor transition-all duration-500",
+        icon: "text-4xl text-lightColor"
+    }
+});
+
+const { container, containerContent, containerLinks, containerMenu, nameText, textLinkHamburguer, textLink, icon } = card();
+
+const navData = [
+    {
+        name: "Home",
+        link: "#home"
+    },
+    {
+        name: "Sobre mim",
+        link: "#about"
+    },
+    {
+        name: "Projetos",
+        link: "#projects"
+    }
+]
 
 export default function NavBar() {
     const [showMenu, setShowMenu] = useState(false);
-    
-    const textLinkHamburguer = "text-lightColor text-5xl py-10 font-bebas hover:text-violetColor transition-colors"
-    const textLink = "text-lightColor text-2xl font-bebas hover:text-violetColor transition-all duration-500 lg:text-2xl"
-    const icon = "text-lightColor text-4xl"
-    
+
     const handleMenu = () => {
         setShowMenu(!showMenu);
     }
 
     return (
-        <nav
-            className='
-                fixed z-50 bg-transparent h-20 px-4 w-full
-                flex justify-between items-center
-                xl:px-12
-                2xl:px-24
-            '
-        >
+        <nav className={container()}>
             <div>
-                <h1 className="
-                        text-violetColor font-jolly text-4xl 
-                        md:pl-4 
-                        lg:pl-12 lg:text-5xl
-                    "
-                >
-                    Luis Henrique
-                </h1>
+                <h1 className={nameText()}>Luis Henrique</h1>
             </div>
-            <div className="
-                    md:w-[500px] md:flex md:justify-end md:items-center
-                "
+            <div className={containerContent()}
             >
-                <div className="
-                        hidden
-                        md:flex md:flex-row md:space-x-12 md:pr-4 
-                        lg:space-x-16 lg:pr-12
-                    "
-                >
-                    <a href="#home" className={textLink}>Home</a>
-                    <a href="#about" className={textLink}>Sobre mim</a>
-                    <a href="#projects" className={textLink}>Projetos</a>
+                <div className={containerLinks()}>
+                    {navData.map((item, index) => (
+                        <a key={index} href={item.link} className={textLink()}>{item.name}</a>
+                    ))}
                 </div>
 
-                <div className="
-                        md:hidden
-                    "
-                >
+                <div className="md:hidden">
                     <button onClick={handleMenu}>
-                        {showMenu ? (    
-                                <FiX className={icon} />
-                        ) : (    
-                                <FiMenu className={icon} />
+                        {showMenu ? (
+                            <FiX className={icon()} />
+                        ) : (
+                            <FiMenu className={icon()} />
                         )}
                     </button>
                 </div>
                 {showMenu && (
-                    <div className="
-                            md:hidden
-                            fixed top-16 left-0 w-full h-[400px]
-                            bg-background flex flex-col items-center
-                        "
-                    >
-                        <a href="#home" className={textLinkHamburguer} onClick={handleMenu}>Home</a>
-                        <a href="#about" className={textLinkHamburguer} onClick={handleMenu}>Sobre mim</a>
-                        <a href="#projects" className={textLinkHamburguer} onClick={handleMenu}>Projetos</a>
+                    <div className={containerMenu()}>
+                        {navData.map((item, index) => (
+                            <a key={index} href={item.link} className={textLinkHamburguer()}>{item.name}</a>
+                        ))}
                     </div>
                 )}
             </div>
