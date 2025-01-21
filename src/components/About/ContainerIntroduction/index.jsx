@@ -1,5 +1,6 @@
 import React from "react";
 import { tv } from "tailwind-variants";
+import { motion } from "motion/react";
 
 const card = tv({
     slots: {
@@ -13,7 +14,14 @@ const { container, normalText, highlightedText } = card();
 
 export default function ContainerIntroduction() {
     return (
-        <div className={container()}>
+        <motion.div
+            className={container()}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            viewport={{ once: false, amount: 0.2 }}
+            transition={{ duration: 1 }}
+        >
             <p className={normalText()}>
                 Me chamo <b className={highlightedText()}>Luis Henrique Cardoso</b> e sou desenvolvedor <b className={highlightedText()}>Fullstack Web e Mobile</b>.
             </p>
@@ -24,6 +32,6 @@ export default function ContainerIntroduction() {
                 No momento estou cursando Sistemas de Informação na <b className={highlightedText()}>Universidade Federal de Santa Maria, Campus Sede</b>.
             </p>
             <p className={normalText()}>Estou sempre buscando estudar as novas tendências do mercado, afim de produzir o melhor produto possível.</p>
-        </div>
+        </motion.div>
     )
 }

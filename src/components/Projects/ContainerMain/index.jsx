@@ -1,5 +1,6 @@
 import React from 'react';
 import { tv } from 'tailwind-variants';
+import { motion } from 'motion/react';
 
 const card = tv({
     slots: {
@@ -13,9 +14,16 @@ const { container, containerBox } = card();
 export default function ContainerMain({ children }) {
     return (
         <div className={container()}>
-            <div className={containerBox()}>
+            <motion.div
+                className={containerBox()}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                viewport={{ once: false, amount: 0.2 }}
+                transition={{ duration: 1 }}
+            >
                 {children}
-            </div>
+            </motion.div>
         </div>
     )
 }

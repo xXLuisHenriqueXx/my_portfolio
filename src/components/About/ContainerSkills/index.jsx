@@ -1,5 +1,6 @@
 import React from "react";
 import { tv } from 'tailwind-variants';
+import { motion } from 'motion/react';
 
 const card = tv({
     slots: {
@@ -51,8 +52,8 @@ const iconsData = [
         alt: "Ícone do PostgreSQL"
     },
     {
-       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain.svg",
-         alt: "Ícone do MongoDB" 
+        src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain.svg",
+        alt: "Ícone do MongoDB"
     }
 ];
 
@@ -62,7 +63,14 @@ export default function ContainerSkills() {
     const secondHalf = iconsData.slice(half, iconsData.length);
 
     return (
-        <div className={container()}>
+        <motion.div
+            className={container()}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            viewport={{ once: false, amount: 0.2 }}
+            transition={{ duration: 1 }}
+        >
             <h2 className={title()}>Minhas competências em programação:</h2>
 
             <div className={containerIcons()}>
@@ -71,13 +79,13 @@ export default function ContainerSkills() {
                         <img key={index} className={icon()} src={iconData.src} alt={iconData.alt} />
                     ))}
                 </div>
-                
+
                 <div className={iconsRow({ iconsRow: 'second' })}>
                     {secondHalf.map((iconData, index) => (
                         <img key={index} className={icon()} src={iconData.src} alt={iconData.alt} />
                     ))}
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
