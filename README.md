@@ -1,45 +1,44 @@
-# Meu Portfólio Pessoal 🙋
-Este repositório contém o código-fonte do meu portfólio pessoal, que exibe informações sobre mim, meus projetos e meu trabalho. O portfólio foi desenvolvido utilizando React, Vite e TailwindCSS para proporcionar uma experiência rápida, responsiva e moderna.
+# My Personal Portfolio 🙋
+This repository contains the source code for my personal portfolio, which displays information about me, my projects and my work. The portfolio was developed using React, Vite and TailwindCSS to provide a fast, responsive and modern experience.
 
-## Funcionalidades
-- **Home**: Uma introdução com meus contatos.
-- **Sobre Mim**: Uma página detalhada com informações sobre minha trajetória, habilidades e experiências.
-- **Projetos**: Uma seção onde apresento alguns dos projetos que desenvolvi, com links para o código-fonte.
+## Sections
+- **Home**: An introduction section with my contacts.
+- **Sobre Mim**: A detailed section with information about my background, skills and experiences.
+- **Projetos**: A section where I present some of the projects, with links to the source code.
 
-## Tecnologias Utilizadas <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="20"/>
-- **React**: Biblioteca JavaScript para criação de interfaces de usuário dinâmicas.
-- **Vite**: Ferramenta de build e desenvolvimento para projetos front-end.
-- **TailwindCSS**: Framework CSS utilitário para estilização rápida e responsiva.
+## Technologies <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="20"/>
+- **React**: JavaScript library for creating dynamic user interfaces.
+- **Vite**: Build and development tool for front-end projects.
+- **TailwindCSS**: Utility CSS framework for fast and responsive styling.
 
-## Como Executar o Projeto
-1. Clone o repositório com os comandos abaixo:
+## How to execute
+1. Clone the repository with the commands below:
 ```bash
 git clone https://github.com/seu-usuario/nome-do-repositorio.git
 cd nome-do-repositorio
 ```
 
-2. Instale as dependências com o comando abaixo:
+2. Install the dependencies with the command bellow:
 ```bash
 npm install
 ```
 
-3. Execute o servidor de desenvolvimento com o comando abaixo:
+3. Execute the development server with the commad bellow:
 ```bash
 npm run dev
 ```
-4. Acesse o portfólio em http://localhost:3000 no navegador.
+4. Access the portfolio in `http://localhost:3000` on your browser.
 
-## Estrutura do Projeto
+## Project Structure
 - src/
-  - assets/: Imagens, ícones e outros recursos estáticos.
-  - components/: Componentes reutilizáveis da aplicação.
-  - contexts/: Contextos globais do React para gerenciar estados e dados que precisam ser acessados em múltiplos componentes.
-  - pages/: Telas do site.
+  - assets/: Images, icons and others statics resources.
+  - components/: Reusable application components.
+  - pages/: Website sections.
 
 ---
 
-# Contribuição
-- Embora este seja um portfólio pessoal, sugestões são sempre bem-vindas! Fique à vontade para abrir uma issue ou enviar um pull request.
+# Contribuition
+- Although this is a personal portfolio, suggestions are always welcome! Feel free to open an issue or submit a pull request.
 
-# Licença
-- Este projeto está licenciado sob a MIT License.
+# License
+- This project is licensed under the MIT License.
