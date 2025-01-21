@@ -14,7 +14,7 @@ This repository contains the source code for my personal portfolio, which displa
 ## How to execute
 1. Clone the repository with the commands below:
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+git clone https://github.com/xXLuisHenriqueXx/my_portfolio.git
 cd nome-do-repositorio
 ```
 
