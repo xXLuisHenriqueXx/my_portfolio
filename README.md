@@ -15,7 +15,7 @@ This repository contains the source code for my personal portfolio, which displa
 1. Clone the repository with the commands below:
 ```bash
 git clone https://github.com/xXLuisHenriqueXx/my_portfolio.git
-cd nome-do-repositorio
+cd my_portfolio
 ```
 
 2. Install the dependencies with the command bellow:
