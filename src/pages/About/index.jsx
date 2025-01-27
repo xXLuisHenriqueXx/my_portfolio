@@ -2,7 +2,6 @@ import React from "react";
 
 import Container from "../../components/common/Container";
 import ContainerMain from "../../components/common/ContainerMain";
-import ContainerPosition from "../../components/About/ContainerPosition";
 import ContainerIntroduction from "../../components/About/ContainerIntroduction";
 import ContainerSkills from "../../components/About/ContainerSkills";
 
