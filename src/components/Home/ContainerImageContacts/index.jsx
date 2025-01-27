@@ -9,7 +9,7 @@ import Perfil from '../../../assets/perfil.png';
 const card = tv({
     slots: {
         container: 'md:flex md:flex-col md:items-center lg:flex-row lg:w-full',
-        imageContainer: 'flex justify-center mb-4 lg:absolute lg:top-[10%] lg:right-12 xl:right-24 2xl:right-36',
+        imageContainer: 'flex justify-center mb-4 lg:absolute lg:top-[12%] right-0',
         image: 'w-[360px] lg:w-[420px] xl:w-[540px] 2xl:w-[680px] animate-float'
     }
 });

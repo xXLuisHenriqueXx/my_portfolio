@@ -2,7 +2,7 @@ import React from 'react';
 import { tv } from 'tailwind-variants';
 
 import Container from '../../components/common/Container';
-import ContainerMain from '../../components/Projects/ContainerMain';
+import ContainerMain from '../../components/common/ContainerMain';
 import Carousel from '../../components/Projects/Carousel';
 
 const card = tv({
@@ -19,7 +19,7 @@ const { containerContent, title, normalText, linkText } = card();
 export default function Projects() {
   return (
     <Container id={"projects"}>
-      <ContainerMain>
+      <ContainerMain screen={'projects'}>
         <div className={containerContent()}>
           <h1 className={title()}>MEUS PROJETOS</h1>
 

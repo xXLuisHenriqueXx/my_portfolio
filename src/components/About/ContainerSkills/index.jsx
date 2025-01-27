@@ -4,17 +4,17 @@ import { motion } from 'motion/react';
 
 const card = tv({
     slots: {
-        container: 'w-full md:w-[31.25rem] xl:w-[36.5rem] 2xl:w-[45rem] 2xl:h-[27rem] p-4 xl:px-8 2xl:p-10 bg-backgroundCard rounded-md',
+        container: 'w-full md:w-[31.25rem] xl:w-[36.5rem] 2xl:w-[45rem] p-4 xl:px-8 2xl:p-10 lg:absolute lg:bottom-20 2xl:bottom-28 lg:right-0 bg-backgroundCard rounded-md',
         title: 'pt-2 text-2xl lg:text-3xl font-medium font-bebas text-lightColor text-center',
-        containerIcons: 'flex flex-col mt-4',
-        iconsRow: 'flex flex-row justify-between items-center gap-x-3 sm:gap-x-7 md:gap-0',
+        containerIcons: 'flex flex-col mt-4 xl:mt-8',
+        iconsRow: 'flex flex-row justify-between items-center',
         icon: 'w-[4.375rem] md:w-[5.25rem] 2xl:w-[8.125rem] p-2 2xl:p-4 bg-backgroundIcon rounded-md grayscale transition duration-500 ease-in-out hover:grayscale-0 hover:scale-110'
     },
 
     variants: {
         iconsRow: {
             second: {
-                iconsRow: 'pt-4 2xl:pt-8'
+                iconsRow: 'pt-4 xl:pt-8'
             }
         }
     }

@@ -3,7 +3,7 @@ import { tv } from "tailwind-variants";
 
 const card = tv({
     slots: {
-        container: "container mx-auto w-full min-h-screen px-4"
+        container: "relative w-full min-h-screen"
     }
 });
 

@@ -1,7 +1,7 @@
 import React from "react";
 
 import Container from "../../components/common/Container";
-import ContainerMain from "../../components/About/ContainerMain";
+import ContainerMain from "../../components/common/ContainerMain";
 import ContainerPosition from "../../components/About/ContainerPosition";
 import ContainerIntroduction from "../../components/About/ContainerIntroduction";
 import ContainerSkills from "../../components/About/ContainerSkills";
@@ -9,14 +9,10 @@ import ContainerSkills from "../../components/About/ContainerSkills";
 export default function About() {
     return (
         <Container id={"about"}>
-            <ContainerMain>
-                <ContainerPosition side='left'>
-                    <ContainerIntroduction />
-                </ContainerPosition>
+            <ContainerMain screen={'about'}>
+                <ContainerIntroduction />
 
-                <ContainerPosition side='right'>
-                    <ContainerSkills />
-                </ContainerPosition>
+                <ContainerSkills />
             </ContainerMain>
         </Container>
     )

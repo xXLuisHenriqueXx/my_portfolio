@@ -4,8 +4,8 @@ import { motion } from "motion/react";
 
 const card = tv({
     slots: {
-        container: 'flex flex-col md:justify-center w-full md:w-[31.25rem] md:h-68 lg:w-[36.5rem] lg:h-72 xl:h-96 2xl:w-[45rem] 2xl:h-[28rem] p-4 2xl:p-10 bg-backgroundCard rounded-md',
-        normalText: 'p-2 indent-8 md:text-lg lg:text-xl 2xl:text-2xl font-roboto text-lightColor',
+        container: 'flex flex-col md:justify-center w-full h-auto md:w-[31.25rem] lg:w-[36.5rem] 2xl:w-[45rem] p-4 2xl:p-10 lg:absolute lg:top-20 2xl:top-28 bg-backgroundCard rounded-md',
+        normalText: 'indent-8 md:text-lg lg:text-xl 2xl:text-2xl font-roboto text-lightColor',
         highlightedText: 'text-highlitedColor'
     }
 });
