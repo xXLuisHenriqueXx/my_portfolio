@@ -6,13 +6,13 @@ import ContainerIntroduction from "../../components/About/ContainerIntroduction"
 import ContainerSkills from "../../components/About/ContainerSkills";
 
 export default function About() {
-  return (
-    <Container id={"about"}>
-      <ContainerMain screen={"about"}>
-        <ContainerIntroduction />
+    return (
+        <Container id={"about"}>
+            <ContainerMain screen={'about'}>
+                <ContainerIntroduction />
 
-        <ContainerSkills />
-      </ContainerMain>
-    </Container>
-  );
+                <ContainerSkills />
+            </ContainerMain>
+        </Container>
+    )
 }
