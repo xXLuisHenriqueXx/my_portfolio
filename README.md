@@ -27,7 +27,7 @@ npm install
 ```bash
 npm run dev
 ```
-4. Access the portfolio in `http://localhost:3000` on your browser.
+4. Access the portfolio in `https://xxluishenriquexx.github.io/my_portfolio/` on your browser.
 
 ## Project Structure
 - src/
